@@ -1,0 +1,532 @@
+/*
+Theme Name: Portfolio Perfection 
+Author: Cary Soltis
+Description: A simple responsive theme to showcase your portfolio projects.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: grey, white, light, teal, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, translation-ready
+Text Domain: perfection
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/*GLOBAL STYLE*/
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+img,
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+/*NAVIGATION BAR SECTION*/
+
+nav li {
+    padding-right: 2em;
+}
+
+a {
+    color: white;
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-light {
+    background-color: #adc1c4 !important;
+}
+
+.dropdown-menu {
+    background-color: #adc1c4;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-size: 2.25em;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav ul {
+    text-align: right;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+
+/*FEATURE SECTION*/
+
+h1 {
+    font-size: 3em;
+}
+
+.page-heading {
+    margin-top: 5em;
+}
+
+.feature-text {
+    color: #fff;
+    padding: .5em 2em;
+    position: absolute;
+}
+
+.feature-text:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.feature-text h1 {
+    background-color: #6e7d7f;
+    margin-left: 32%;
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+}
+
+.feature-text p {
+    background-color: #6e7d7f;
+    font-size: 2em;
+    margin-left: 32%;
+    margin-top: 30%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    width: 100%;
+}
+
+#features img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+/*WELCOME SECTION*/
+
+#welcome h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: .75em;
+    padding-top: .75em;
+    text-align: center;
+}
+
+#welcome {
+    background-color: #6e7d7f;
+}
+
+#welcome button {
+    background-color: white;
+    border: .1em solid #285f65;
+    color: black;
+    font-size: 1.7em;
+    margin: 4% 35% 5% 35%;
+}
+
+#welcome img {
+    /*height: 90%;*/
+    width: 90%;
+}
+
+#welcome p {
+    color: white;
+    float: right;
+    font-size: 1.2em;
+    padding-right: 5%;
+}
+
+/*RECENT WORK SECTION*/
+
+.btn-primary {
+    background-color: #285f65;
+    border-color: #adc1c4;
+    color: white;
+    font-size: 1.25;
+}
+
+.btn-primary:hover {
+    background-color: #6e7d7f;
+    border-color: #adc1c4;
+    color: white;
+}
+
+.thumbnail {
+    margin-top: 1em;
+    margin-left: 11%;
+}
+
+#recent-work h2 {
+    color: black;
+    font-size: 3em;
+    margin-bottom: .75em;
+    padding-top: .75em;
+    text-align: center;
+}
+
+#recent-work img {
+    width: 80%;
+}
+
+/*FOOTER SECTION*/
+
+.contact-address h4,
+.contact-address a,
+.contact-address address {
+    color: white;
+    margin-left: 15%;
+}
+
+h4 {
+    font-size: 1.75em;
+    margin-top: 1.25em;
+}
+
+address {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+footer p {
+    background-color: #6e7d7f;
+    color: black;
+    text-align: center;
+}
+
+.footer-nav ul {
+    background-color: #dffafe;
+    border: .1em solid #285f65;
+    color: black;
+    list-style-type: none;
+    margin-top: 1em;
+    padding-left: 0;
+    text-align: center;
+}
+
+.footer-nav a {
+    color: black;
+}
+
+.social li {
+    color: #285f65;
+    font-size: 3em;
+    padding-right: 20%;
+}
+
+.social ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 1.75em;
+    margin-left: 2.5em;
+}
+
+#contact-footer {
+    background-color: #adc1c4;
+}
+
+/*BEGIN ABOUT PAGE STYLING*/
+
+#about-info {
+    padding-top: 8%;
+}
+
+#about-info h1 {
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#about-info p {
+    padding: 0 1% 2% 5%;
+    font-size: 1.3em;
+}
+
+.about-text img {
+    padding: 0 3% 2% 5%;
+}
+
+#goals {
+    background-color: #6e7d7f;
+    padding: 1.5em;
+}
+
+#goals h2,
+#goals ul {
+    color: white;
+}
+
+#goals ul {
+    margin-left: 2em;
+    font-size: 1.4em;
+}
+
+#goals h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*BEGIN PROJECT PAGE STYLING*/
+
+#projects {
+    padding: 10% 6% 8% 3%;
+}
+
+#projects h1 {
+    text-align: center;
+}
+
+#projects img {
+    padding-bottom: 4%;
+}
+
+/*END PROJECT PAGE STYLING*/
+
+/*BEGIN BLOG HOME PAGE STYLING*/
+
+a {
+    color: #285f65;
+}
+
+.list-unstyled a {
+    color: #285f65;
+}
+
+.page-link {
+    color: #285f65;
+}
+
+.pagination a {
+    color: #285f65;
+}
+
+.pagination a:hover {
+    color: darkgray;
+}
+
+.pagination {
+	margin-bottom: 50px;
+}
+
+.pagination a span {
+	background-color: #285f65;
+	color: #fff;
+    font-size: .4em;
+}
+
+.pagination a:hover span {
+	color: #000;	
+}
+
+.pagination span {
+	background-color: #fff;
+	color: #000;	
+	border: 2px #285f65 solid;	
+	padding: 2px 6px;
+	border-radius: 5px;	
+}
+
+#blog-home {
+    padding-top: 6em;
+}
+
+/*END BLOG HOME PAGE STYLING*/
+
+
+/*BEGIN CONTACT FORM PAGE STYLING*/
+
+#contact {
+    padding-top: 6em;
+}
+
+#contact button {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-group textarea {
+    border-color: #285f65;
+}
+
+.form-group input {
+    border-color: #285f65;
+}
+
+#contact form {
+    font-size: 2em;
+    margin: 5% 7% 6% 7%;
+}
+
+/*END CONTACT FORM PAGE STYLING*/
+
+@media (max-width: 767px) {
+    #features {
+        padding-top: 5em;
+    }
+
+    .feature-text h1,
+    .feature-text p {
+        margin-left: 11%;
+        text-align: center;
+    }
+
+    .feature-text h1 {
+        font-size: 1.5em;
+    }
+
+    .feature-text p {
+        font-size: 1em;
+    }
+}
+
+/*CUSTOM THEME STYLING*/
+
+/*STYLE FORM ON LET'S WORK TOGETHER PAGE*/
+footer p {
+    text-align: left;
+}
+
+.card {
+	width: 100%;
+}
+
+.card-title {
+	text-align: center;
+}
+
+.navbar-nav ul {
+    padding-left: 15%;
+}
+
+.welcome-img {
+	padding-bottom: 1.5em;
+}
+
+#blog-home,
+#contact {
+  padding-top: 1em;
+}
+
+
+#recent-work {
+ padding-left: 6%;
+}
+
+#recent-work img {
+	width: 80%;
+  padding-top: 2em;
+}
+
+#submit {
+	background-color: #adc1c4;
+	color: white;
+}
+
+#text-2,
+#text-2 p {
+	background-color: #adc1c4;
+	color: white;
+}
+
+
+
+/* used for xs devices */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*FEATURE SECTION*/
+
+
+    /*
+    .feature-text h1,
+    .feature-text p {
+        float: none;
+        margin: auto;
+        padding: 10%;
+        position: relative;
+    }
+
+    #features img {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+
+
+
+    /*WELCOME SECTION*/
+    /*
+    #welcome img {
+        height: 60%;
+        width: 75%;
+    }
+
+    */
+}
+
+/* used for sm devices, tablets */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*FEATURE SECTION
+
+    .feature-text h1,
+    .feature-text p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .feature-text h1 {
+        font-size: 1.75em;
+
+    }
+
+    .feature-text p {
+        font-size: 1.5em;
+    }*/
+}
+
+/* used for md devices, smaller desktops */
+
+@media (min-width: 1200px) {
+  
+}
+
+/* used for lg devices, larger desktops */
